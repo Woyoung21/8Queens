@@ -3,9 +3,29 @@
 
 	Will Young      CS10C       9/13/22     Harden    A4
 	
-This assignment helps us get used to using advanced 
+This program is an implementation of the Eight Queens Puzzle, 
+a famous problem from the domain of computer science and mathematics. 
+The puzzle asks for a solution in which eight queens are placed on an 
+8x8 chessboard in such a way that no two queens threaten each other. 
+In chess, a queen can move any number of squares along a row, column, 
+or diagonal. Thus, the challenge is to place the queens so that no 
+queen shares the same row, column, or diagonal with another queen.
 
-recursion methods with a vector.
+The program uses a recursive backtracking algorithm to find the 
+solutions to this puzzle. It starts by placing a queen in the 
+first column, then moves to the next column, and attempts to 
+place a queen in a square that is not "under attack" by any 
+previously placed queen. If it finds such a square, it proceeds 
+to the next column. If it doesn't, it backtracks—moving the 
+queen in the previous column to a new square and trying again.
+
+The Queen class represents a single queen, which has a property 
+for the row in which it is placed. The Board class represents the 
+chessboard and contains the main logic for solving the puzzle. 
+The program will print out one of the solutions to the problem 
+or indicate if no solution was found. The output is represented 
+as an 8x8 grid where 'X' denotes a queen and '_' denotes an 
+empty square.
 
 ************************************************************
 */
